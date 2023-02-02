@@ -1,0 +1,56 @@
+1] Flexbox: Flexbox is a new layout mode in CSS3. It is a one-dimensional layout method for laying out items in rows or columns. It provides a more efficient way to layout, align and distribute space among items in the container.
+
+2] difference between Grid and Flexbox:
+  flexbox: is a very useful layout tool especially for smaller areas within the site.
+  Its main features are to align items in horizontal or vertical axes, spaces them out automatically, invert the order in which they're displayed, along with a few other layout options.
+
+  css Grid: is more of the layout tool for the entire page. 
+  While flexbox excels in laying out items along a single axis.Grid is better for layouts with both horizontal and vertical axes.
+
+  3]To use flexbocx we define a container as a flexbox. What is the CSS to do this?
+  =====>display: flex;
+
+  4]flex-direction allows you to do?
+  =====> define the direction of how elements are positioned based on their row or column.
+
+  5]flex-wrap allows you to do?
+  =====>define how wlwmwnts will wrap when the browser width is changed.
+
+  6]justify contenet allows you to do?
+  =====> define how to position elements horizontally.
+
+  7]align-items allows you to do?
+  =====> define how to position elements vertically.
+
+  8]flex-basis defines?
+  =====> the width of the flex elements.
+
+  9]css property "order" for flex allows you to?
+  =====>Specify in what order the flex items appear.
+
+  10]flex-grow apply to elements not a whole flexbox?
+  =====>true.
+
+  11]how to wrap the box inside the flexbox container?
+  =====>using flex-wrap:wrap.
+
+  ////////////////////////////////////////////////////
+
+  Parent container properties:
+  1] flex
+  2] flex-direction ========> default value is row
+  3] flex-wrap ========> default value is nowrap
+  4] flex-flow shorthand for <flex-direction> <flex-wrap>
+  5] justify content= alignment of items along main-axis that is horizontally. default value is fle-start
+  6] align-items= alignment of items along cross axis that is vertically. default value is stretch.
+  7] align-content= like mixed of justify content and align-items but along cross-axis. It contains multiple rows.
+ /////////////////////////////////////////////
+
+ flex item properties:
+ 1] oredr
+ 2] flex-grow
+ 3] flex-shrink
+ 4] flex-basis
+ 5] flex =====>shorthand for <flex-grow> <flex-shrink> <flex-basis>
+ 6] align-self
+ //////////////////////////////////////////////////

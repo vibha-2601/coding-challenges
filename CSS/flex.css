@@ -1,0 +1,17 @@
+/* In this challenge,
+you have to use flex for every alignment.. challenge pic: https: //prnt.sc/qab0fe
+
+If you see the pic above,
+you will see.. there are 1 image,
+1 title and 1 description inside one div with a green border. You have to use following structure in html and finish the task with display: flex css.... <div><img/><h2></h2><p></p></div> */
+
+/* .img {
+    display: flex;
+}
+
+.info {
+    height: 100px;
+    margin: 10px;
+
+} */
+   

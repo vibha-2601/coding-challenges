@@ -1,0 +1,27 @@
+.nav {
+    font-size: 30px;
+    background-color: black;
+    color:aliceblue;
+}
+
+.nav ul {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.nav ul li {
+    cursor: pointer;
+    padding: 5px;
+    flex: 2;
+    text-align: center;
+
+}
+
+.nav ul li:hover {
+    background-color: brown;
+}
+
+

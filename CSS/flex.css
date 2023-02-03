@@ -5,13 +5,36 @@ If you see the pic above,
 you will see.. there are 1 image,
 1 title and 1 description inside one div with a green border. You have to use following structure in html and finish the task with display: flex css.... <div><img/><h2></h2><p></p></div> */
 
-/* .img {
+
+div {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+    height: 200px;
+    margin: 0 auto;
+    border: 3.2px solid rgb(120, 4, 130);
+    border-radius: 3px;
+    padding: 0.5rem;
+    color: rgb(156, 133, 153); 
 }
 
-.info {
-    height: 100px;
-    margin: 10px;
+img {
+    width: 250px;
+    height: 158px;
+    border-radius: .3rem;
+    border: 1.5px solid rgb(60, 82, 143);
+    margin: 0 auto;
+}
 
-} */
-   
+img {
+    width: 250px; 
+    height: 160px;
+}
+
+p {
+    width: 60%;
+}
+
+

@@ -1,0 +1,22 @@
+.cards {
+    display: flex;
+    border: 5px solid black;
+}
+
+.card {
+    font-size: 25px;
+   text-align: center;
+    border: 5px solid brown;
+   margin: 5px;
+   padding: 5px;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer {
+    background-color: red;
+}
+
+.body {
+    flex: 1;
+}

@@ -1,0 +1,46 @@
+/* The position property specifies the type of positioning method used for an element.
+
+1] static=====> it is a default value. elements are positioned according to the normal flow of the document.
+
+2] relative======> it is positioned relative to its normal position.
+
+3] fixed======> positioned an element relative to the viewport. when we scroll the document the element always stays in the same place.
+
+4] absolute=====> if the element has a different parent element with a relative position then the position will be relative to that parent element.
+
+5] sticky======> positioned based on the user's scroll position. it is sticks on one place while we scroll the document. it is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).*/
+
+/* sticky */
+.position-1 {
+    border: 5px solid red;
+    height: 300px;
+    position: sticky;
+    top:60px;
+    left: 500px;
+}
+
+/* fixed */
+.position-2 {
+    border: 5px solid orange;
+    background-color: antiquewhite;
+    position: fixed;
+    top: 50px;
+    left: 80px;
+}
+
+/* relative */
+.container {
+    border: 4px solid black;
+    height: 80px;
+    position: relative;
+    top:50px;
+    left: 20px;
+}
+
+/* absolute */
+.position-3 {
+    border: 4px solid brown;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}

@@ -24,7 +24,7 @@ body {
     border: 5px solid brown;
     font-size: 1rem;
     border-radius: 2rem;
-    animation: button 5s linear 2s 2 normal;
+    animation: button 5s ease-out 2s 2 normal;
 }
 
 /* shorthand property: div {

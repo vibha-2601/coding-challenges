@@ -1,0 +1,79 @@
+1] What is CSS Grid?
+=====> The CSS Grid Layout Module or simply known as CSS Grid or just Grid is a two-dimensional grid based layout system.
+with rows and columns, Grid makes it is easier to design web page layouts, align and distribute space among items in a grid.
+
+//////Flexbox is a one dimensional layout.
+/////Grid for two dimensional layouts.
+
+///////////////////////////////////////////////////
+
+2] Terminology condition:
+a] Grid line ======> which is vertical and horizontal dividing line in grid. vertical is column and horizontal is row grid line.
+
+b] Grid cell =====> which is the smallest unit you have on your css grid. It is space between four intersecting grid lines.
+
+c] Grid track =====> which is space between two adjacent grid lines.
+
+d] Grid area =====> total space surrounded by four grid lines. A grid area may be composed of any number of grid cells.
+
+///////////////////////////////////////////////////
+
+3] Grid container properties:
+
+a] display : to display either block level or inline level grid container. default value is rows.
+i) grid
+ii) inline-grid.
+
+b] To set the number of rows and columns in grid:
+i) grid-template-columns ======> specifies number of columns (width) in grid layout.
+a) non-negative length value like px, %etc. (100px 200px 300px)
+b) used fraction for the free space available. (1fr 2fr 1fr)
+c) repeat and minmax function. e.g., repeat(no of columns, width)
+====> repeat(4, 200px), repeat(2, minmax(200px, 1fr))
+
+ii) grid-template-rows ======> specifies number of rows (height) in grid layout. same as columns. if you use fraction then add height for container.
+
+iii) grid-template ======> shorthand for defining rows and columns.
+syntax: <grid-template-rows> / <grid-template-columns>
+
+c] To set gap between columns and rows:
+i) column-gap
+ii) row-gap
+iii) gap =====> shorthand <row gap> <column gap>. value is non-negative or a percentage.
+
+d] alignment of grid items: alignments and spacing within cell. values can be start, end, center, stretch is default value.
+i) justify-items =====> alignment along row axis.
+ii) align-items =====> alignment along column axis
+iii) place-items =====> shorthand property=<align-items><justify-items>
+
+e] alignment of entire grid: alignment and spacing within container. values can be start, end, center,stretch,space-between,space-around,space-evenly. start is default value.
+i) justify-content ======> alignment along row axis.
+ii) align-content ======> alignment along column axis
+iii) place-content ======> shorthand property=<align-content><justify-content>
+
+d] properties to deal with auto generated grid tracks: Grid auto properties. Possible values are row, column, dense, row dense, column dense. Value can be pixel, percentage, minmax, auto(default). Row is default value.
+i) grid-auto-columns ======> for setting default column width.
+ii) grid-auto-rows ======> for setting default row height.
+iii) grid-auto-flow ======> controls how auto-placed items get inserted into the grid.
+
+e] grid-templates-area: used to speify areas within the grid layout.
+
+f] grid: shorthand property for =======> <grid-template-rows><grid-templates-columns><grid-template-areas><grid-auto-rows><grid-auto-columns><grid-auto-flow>
+
+///////////////////////////////////////////////////////////////////////
+
+4] Grid item properties:
+a] the properties control on which column line the item starts and ends. span is used the number of columns and rows the item has span. e.g. span 2
+i) grid-column-start
+ii) grid-column-end
+iii) shorthand property=> grid-column
+
+b] the properties control on which row line item starts and ends.
+i) grid-row-start
+ii) grid-row-end
+iii) shorthand property=> grid row
+
+c] alignment of items: values can be start, end, center and stretch(default).
+i) justify-self ======> alignment along row-axis.
+ii) align-self =======> alignment along column-axis.
+iii) place-self =======> shorthand property=<align self><justify-self>

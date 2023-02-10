@@ -1,0 +1,29 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    .mobile {
+        background-color: aqua;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .tablet {
+        background-color:aquamarine;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .laptop {
+        background-color:bisque;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .desktop {
+        background-color:beige;
+    }
+}
+
+@media (min-width: 1200px) {
+    .extra-large {
+        background-color:antiquewhite;
+    }
+}

@@ -28,4 +28,10 @@ const intervalId = setInterval(greet, 2000, "Robert");
 clearInterval(intervalId);
     */
 
-function sum1 ()
+function sum1 (a1, b1) {
+  console.log(a1 + b1);
+}
+ const result1 = setInterval(sum1, 2000, 10, 20);
+ clearInterval(result1);
+
+ ///////////////////////////////////////////

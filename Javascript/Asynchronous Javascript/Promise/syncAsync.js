@@ -26,4 +26,4 @@ console.log(message);//undefined
 console.log("Stop");//stop
 
 // o/p => start undefined stop
-// we get undefined because setTimeout act as asynchronous, so it will not log into console. so we get undefined. We get output by using callback.
+// we get undefined because setTimeout act as asynchronous, so it will not log into console. and also it is not inside asynchronous function. so we get undefined. We get output by using callback.

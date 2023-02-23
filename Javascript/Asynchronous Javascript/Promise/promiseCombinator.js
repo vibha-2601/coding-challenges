@@ -40,7 +40,8 @@ const message3 = (video) => {
 
 Promise.any([message1("Richard"),
 message2("Cooking"),
-message3("Cooking")])
+message3("Cooking"),
+])
 .then((res) => {
     console.log(res);
 })

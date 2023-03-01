@@ -7,7 +7,13 @@ Methods:
 3) removeItem(key) => remove the key with value.
 4) clear() => delete everything.
 5) key(index) => get the key on given position.
-6) length => the number of stored items. */
+6) length => the number of stored items. 
+
+IMP NOTE:
+1) KEY AND VALUES BOTH MUST BE STRING IN LOCAL STORAGE.
+2) WE CAN USE TWO JSON METHODS TO STORE OBJECTS IN LOCAL STORAGE.
+----- JSON.Stringify(object) => convert object to JSON string.
+------- JSON.parse(string) => convert string to object. */
 
 localStorage.setItem("name", "Robert")
 

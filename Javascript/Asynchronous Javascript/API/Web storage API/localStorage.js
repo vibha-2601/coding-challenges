@@ -9,27 +9,27 @@ Methods:
 5) key(index) => get the key on given position.
 6) length => the number of stored items. */
 
-// localStorage.setItem("name", "Robert")
+localStorage.setItem("name", "Robert")
 
-// let key = prompt("Enter the key you want");
-// let value = prompt("Enter the value you want");
+let key = prompt("Enter the key you want");
+let value = prompt("Enter the value you want");
 
-// localStorage.setItem(key, value);
-// console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
+localStorage.setItem(key, value);
+console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
 
-// if (key == 'red' || key == 'blue'){
-//     localStorage.removeItem(key);
-// }
+if (key == 'red' || key == 'blue'){
+    localStorage.removeItem(key);
+}
 
-// console.log(localStorage.length);
+console.log(localStorage.length);
 
-// console.log(localStorage.key(0));
-// console.log(localStorage.key(1));
-// console.log(localStorage.key(2));
-// console.log(localStorage.key(3));
+console.log(localStorage.key(0));
+console.log(localStorage.key(1));
+console.log(localStorage.key(2));
+console.log(localStorage.key(3));
 
-// if(key == 0){
-//     localStorage.clear();
-// }
+if(key == 0){
+    localStorage.clear();
+}
 
 

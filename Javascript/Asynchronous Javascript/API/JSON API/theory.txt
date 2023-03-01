@@ -1,0 +1,76 @@
+///// JSON: 
+1) JSON stands for JavaScript Object Notation.
+2) JSON is a lightweight format for storing and transporting data.
+3) JSON is often used when data is sent from a server to a web page.
+
+///// Data types used with JSON
+1) Number: No difference between integers and floats.
+2) String: String of Unicode characters. Use double quotes.
+3) Boolean: True or false.
+4) Array: Ordered list of 0 or more values.
+5) Object: Unordered collection of key value pairs.
+6) Null: Empty value.
+
+///// JSON syntax rules:
+1) Use key/value pairs.
+  e.g., {"name":"Brad"}
+2) Use double quote around KEY and VALUE.
+3) Must use specified data types.
+4) File type(extension) is ".json".
+5) MIME type "is Application/json".
+
+///// JSON example uses multiple data types
+
+{
+    "name":"Brad Travery",
+    "age":35,
+    "address":{
+        "street":"5 main st",
+        "city":"Boston"
+    },
+    "children":["Brianna","Nicholas"]
+}
+
+////// For validation json = go to jsonlint.
+
+//////// JavaScript has a built in function for "converting JSON strings into JavaScript objects":
+JSON.parse()
+
+/////////// JavaScript also has a built in function for "converting an object into a JSON string":
+JSON.stringify()
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+ // access the data from .json using AJAx request.
+
+ The loadJSON() function is used to read the contents of a JSON file or URL and return it as an object.
+
+ In case the file contains a JSON array, this function would still return it as an object with the index numbers specifying the different keys of the object.
+
+Syntax:
+loadJSON(path, jsonpOptions, datatype, callback, errorCallback)
+
+callback: This is a function which is called when this function executes successfully. The first argument for this function is the data loaded from the file. It is an optional parameter.
+
+     function loadJSON(callback) {
+            var xobj = new XMLHttpRequest();
+            xobj.overrideMimeType("Application/json");
+            xobj.open('GET','people.json', true);
+            xobj.onreadystatechange = function (){
+                if (xobj.readyState == 4 && xobj.status == 200){
+                    callback(JSON.parse(xobj.responseText))
+                }
+            }
+            xobj.send(null);
+        }
+
+      
+      function myData() {
+        loadJSON(function(jsonData) {
+          jsonData.people.sort(function(a,b) {
+            return a.age - b.age;
+          })
+          console.log(JSON.stringify(jsonData));
+        })
+      }
+      ////////////////////////////////////////////////////////////////////////////

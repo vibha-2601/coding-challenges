@@ -1,0 +1,28 @@
+ {
+    "people": [
+        {
+            "name":"Brad",
+            "age": 35,
+            "id":3,
+            "address": "5 golden market"
+        },
+        {
+            "name":"Robert",
+            "age":21,
+            "id":1,
+            "address": "6 golden market"
+        },
+         {
+            "name":"Aaana",
+            "age":20,
+            "id":4,
+            "address": "7 golden market"
+        },
+         {
+            "name":"Tarun",
+            "age":45,
+            "id":2,
+            "address": "8 golden market"
+        }
+    ]
+}

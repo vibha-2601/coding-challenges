@@ -18,16 +18,16 @@ test();
 
 /* shadowing the varaibles it do not cross boundary of scope that is we can shadow "var" variable using "let". but cannot do "let" with "var". If do opposite "let" with "var" it is called as "Illegal shadowing" and gives us an error "variable already defined."*/
 
-const test1 = () => {
-    var b = "Hellooooo";
-    let c = "Bye";
+// const test1 = () => {
+//     var b = "Hellooooo";
+//     let c = "Bye";
 
-    if(true) {
-        let b = "Heeeeeee";
-        var c = "Byeeeeeeeeee ";
-        console.log(b);
-        console.log(c);
-    }
-}
-test1();
+//     if(true) {
+//         let b = "Heeeeeee";
+//         var c = "Byeeeeeeeeee ";
+//         console.log(b);
+//         console.log(c);
+//     }
+// }
+// test1();
 

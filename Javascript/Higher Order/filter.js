@@ -31,3 +31,5 @@ console.log(eightiesCompanies);
 // companies lasted in 10 years or more
 const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
 console.log(lastedTenYears);
+
+

@@ -23,3 +23,32 @@ console.log(agesSum);
 //  total years of all companies
 const totalYears = companies.reduce((total, company) => total + (company.end - company.start),0);
 console.log(totalYears);
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// Example 2:
+const arr = [5, 1, 3, 2, 6];
+
+// find sum of arr
+const totalSum = arr.reduce((total, sum) => total + sum, 0);
+console.log(totalSum);
+
+// find max no
+const maxNum = arr.reduce((max, curr) => {
+     if (curr > max){
+      max = curr;
+    }
+    return max;
+}, 0);
+console.log(maxNum);
+
+// find min no
+const minNum = arr.reduce((min, curr) => {
+    if (curr < min) {
+        min = curr;
+    }
+    return min;
+})
+console.log(minNum);
+
+////////////////////////////////////////////////////////////////////////////////////////

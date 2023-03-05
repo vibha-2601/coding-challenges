@@ -32,4 +32,17 @@ console.log(eightiesCompanies);
 const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
 console.log(lastedTenYears);
 
+////////////////////////////////////////////////////////////////////////////////////////
 
+// Example 2:
+const arr = [5, 1, 3, 2, 6];
+
+// find even number
+const evenNum = arr.filter(a => (a%2 === 0));
+console.log(evenNum);
+
+//find odd number
+const oddNum = arr.filter(a => a%2);
+console.log(oddNum);
+
+////////////////////////////////////////////////////////////////////////////////////////

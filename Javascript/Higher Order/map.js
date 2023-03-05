@@ -1,6 +1,7 @@
 //  the map() method is used to iterate over an array and calling function on every element of the array. 
 
-// Example:
+
+// Example 1:
 
 const companies = [
     {name: "company one", category: "Finance", start: 1981, end: 2003},
@@ -33,3 +34,22 @@ const result1 = ages
 .map(age => Math.sqrt(age))
 .map(age => age * 2);
 console.log(result1)
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+// Example 1:
+const arr = [5, 1, 3, 2, 6];
+
+// double the array
+const doubleArr = arr.map(a => a * 2);
+console.log(doubleArr);
+
+// triple the array
+const tripleArr = arr.map(a => a * 3);
+console.log(tripleArr);
+
+// binary the array
+const binaryArr = arr.map(a => a.toString(2));
+console.log(binaryArr);

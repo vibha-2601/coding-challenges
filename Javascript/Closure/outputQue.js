@@ -132,7 +132,7 @@ for (let i =0; i < 3; i++) {
     }
     return a;
 }
-}
+
 const res = b();
 res();
 

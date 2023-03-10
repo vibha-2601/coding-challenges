@@ -1,5 +1,7 @@
 /*Closures: A function along its lexical scope forms a closure. 
-A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).*/
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment).
+
+Lexical scope: Variable defined outside a function can be accessible inside of another function defined after a variable declaration but opposite is not true*/
 
 function outer(){
     let counter = 0;

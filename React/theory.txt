@@ -1,0 +1,94 @@
+1) what is react?
+React is a library for building user interfaces.
+
+//React runs on a client server as a single page app.
+
+React is often referred as a front-end framework because it is capable and directly comparable to a framework such as Angular or Vue.
+
+
+2)why would you use react?
+a) structure the "view" layer of your application.
+b) reusable components with their own state.
+c) JSX - dynamic markup.
+d) interactive UIs with Virtual DOM.
+e) performance and testing.
+f) very popular in the industry.
+
+3) state?
+components have state which is an object that determines how a component behaves and renders.
+"app and global" state refers to state that is available to the entire UI, not just a single component.
+
+4) react hooks?
+React hooks are functions that let us hook into the React state and lifecycle features from function components.
+
+usestate =====> returns a stateful value and a function to update it.
+
+useEffect =====> perform side effects in function components.
+
+
+// creating react-app ==========> npx create-react-app my-app
+cd my-app
+code . =====> open vs code in current folder
+
+// components name "first letter should be capital.
+
+5) passing props======>
+ 1) in app.js ----- <Header title="Hello" />
+    in Header.js:=
+    const Header = (props) => {
+        return (
+            <header>
+            <h1>{props.title}</h1>
+        )
+    }
+
+    2) By using destructuring.
+      in Header.js :=
+      const Header = (props) => {
+        const { title, name } = props;
+        return (
+            <header>
+            <h1> { title, name } </h1>
+            </header>
+        )
+      }
+
+    3) const Header = ({ title, name }) => {
+        return(
+            <header>
+            <h1> {title} {name} </h1>
+            </header>
+        )
+    }
+
+    4) we can pass default props.
+       const Header = ({ title }) => {
+        return(
+            <header>
+            <h1>{title}</h1>
+            </header>
+        )
+       }
+
+       Header.defaultProps = {
+        title: "Task Tracker",
+       }
+
+
+     6) we can do styling in different ways ======> 
+      a) using ecternal package "style component".
+      
+      b) direct css styling. e.g., style = {{color: 'red', backgroundColor: 'yellow'}}
+       
+    c) in header file below,
+        const Header = ({ title }) => {
+        return(
+            <header>
+            <h1>{headerStyle}</h1>
+            </header>
+        )
+       }
+        const headerStyle = {
+            color: 'red', 
+            backgroundColor: 'yellow'
+        }

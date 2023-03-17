@@ -1,0 +1,12 @@
+1) What is React js?
+a. React is a javascript library.
+b. Use for Front end development with good speed.
+c. developed by Facebook.
+
+2) What is component?
+a. A piece of code that can reuse like function.
+b. but more powerful than function
+c. 2 types - class and functional component.
+
+3) What is class component?
+a. A component that has ES6 class.

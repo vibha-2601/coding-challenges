@@ -1,5 +1,5 @@
-import Toggle from "./components/Toggle";
-import Counter from './components/Counter';
+import Toggle from "./components/useState Hook/Toggle";
+import Counter from './components/useState Hook/Counter';
 import Exam1 from "./components/useState Hook/Exam1";
 import Exam2 from "./components/useState Hook/Exam2";
 import Exam3 from "./components/useState Hook/Exam3";

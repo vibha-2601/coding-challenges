@@ -7,6 +7,7 @@ import Exam4 from "./components/useState Hook/Exam4";
 import Exam5 from "./components/useState Hook/Exam5";
 import Exam6 from "./components/useState Hook/Exam6";
 import Exam7 from "./components/useState Hook/Exam7";
+import API from "./components/fetch Data/API";
 
 
 
@@ -24,7 +25,8 @@ function App() {
   {/* <Exam4 /> */}
   {/* <Exam5 /> */}
   {/* <Exam6 /> */}
-  <Exam7 />
+  {/* <Exam7 /> */}
+  <API />
     </div>
   );
 }

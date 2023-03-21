@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 const Exam1 = () => {
     const [text, setText] = useState("");
 
+
     const onChange = (e) => {
         let newVal = (e.target.value);
         setText(newVal);
@@ -13,9 +14,9 @@ const Exam1 = () => {
   return (
     <div>
        <input type="text"  placeholder="Type something here...." onChange={onChange}  />
-      <h1>{text}</h1>
     </div>
   )
 }
+
 
 export default Exam1

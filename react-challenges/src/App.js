@@ -19,14 +19,17 @@ function App() {
     <div className="App">
   {/* <Toggle /> */}
   {/* <Counter /> */}
-  {/* <Exam1 /> */}
+  <Exam1  />
+    
+   
+
   {/* <Exam2 /> */}
   {/* <Exam3 text={text} maxLength={50} /> */}
   {/* <Exam4 /> */}
   {/* <Exam5 /> */}
   {/* <Exam6 /> */}
   {/* <Exam7 /> */}
-  <API />
+  {/* <API /> */}
     </div>
   );
 }
